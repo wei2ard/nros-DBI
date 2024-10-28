@@ -2,7 +2,7 @@
 set -e
 
 function pack(){
-  $LANG=$1
+  LANG=$1
   mkdir -p ./$LANG/switch/DBI_$LANG
   mv ./$LANG/DBI.nro ./$LANG/switch/DBI_$LANG
   cp ./temp/* ./$LANG/switch/DBI_$LANG
